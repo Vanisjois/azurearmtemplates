@@ -1,0 +1,11 @@
+rg='vaniss-qa'
+
+az deployment group create -g $rg --template-file 'storage.json' --parameters @storage.parameters.json
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+mkdir qa
+cd qa/
+echo --> storage.json
+echo --> storage.parameters.json
